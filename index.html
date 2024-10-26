@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ascending()">ascending</button>
+    <button onclick="descending()">descending</button>
+<p id="p1"></p>
+<script>
+    var num=[20,55,99,100,34,75]
+    function ascending(){
+        num.sort(function(a,b){return a-b})
+        document.getElementById("p1").innerHTML=num;
+    }
+    function descending(){
+        num.reverse(function(a,b){return b-a})
+        document.getElementById("p1").innerHTML=num;
+    }
+    </script>
+
+
+
+
+</body>
+</html>
